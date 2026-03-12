@@ -1,19 +1,15 @@
 baseURL = "https://giacomodiclerico.com/"
 title = "Portfolio"
-theme = "hugo-coder"
-languageCode = "en"
+theme = "terminal"
+languageCode = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 enableEmoji = true
 canonifyURLs = true
 
 [pagination]
-pagerSize = 6
+pagerSize = 5
 
-[services]
-[services.disqus]
-
-[markup]
 [markup.highlight]
 noClasses = false
 
@@ -22,85 +18,64 @@ noClasses = false
 unsafe = true
 
 [params]
-author = "Giacomo Di Clerico"
-description = "Giacomo's personal website"
-keywords = "developer,personal"
-info = ["Computer Engineer at Politecnico di Milano"]
-avatarURL = "images/avatar.jpg"
-dateFormat = "January 2, 2006"
-since = 2025
-rtl = false
-colorScheme = "auto"
-# Hide the toggle button, along with the associated vertical divider
-hideColorSchemeToggle = false
-# Series see also post count
-maxSeeAlsoItems = 5
-# Custom CSS
-customCSS = []
-# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
-customSCSS = []
-# Custom JS
-customJS = []
-# Custom remote JS files
-customRemoteJS = []
-
-[taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
-author = "authors"
-
-[[params.social]]
-name = "Github"
-icon = "fa-brands fa-github fa-2x"
-weight = 1
-url = "https://github.com/MishowHD"
-
-[[params.social]]
-name = "Gitlab"
-icon = "fa-brands fa-gitlab fa-2x"
-weight = 2
-url = "https://gitlab.com/MishowHD"
-
-[[params.social]]
-name = "LinkedIn"
-icon = "fa-brands fa-linkedin fa-2x"
-weight = 4
-url = "https://www.linkedin.com/in/giacomodiclerico/"
+contentTypeName = "posts"
+showMenuItems = 3
+centerTheme = true
+showLanguageSelector = true
 
 
 [languages.en]
-languageName = ":uk:"
+languageName = "EN"
 contentDir = "content/en"
 
-[[languages.en.menu.main]]
-name = "About"
-weight = 1
-url = "about/"
+  [languages.en.params]
+    subtitle = "Computer Engineer · Cybersecurity"
+    owner = "Giacomo Di Clerico"
+    keywords = "cybersecurity, linux, homelab, portfolio"
+    copyright = ""
+    favicon = "favicon.ico"
 
-[[languages.en.menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
+    [languages.en.params.logo]
+      logoText = "~/portfolio"
+      logoHomeLink = "/en/"
+
+  [[languages.en.menu.main]]
+    name = "about"
+    url = "/en/about/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "projects"
+    url = "/en/projects/"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "contact"
+    url = "/en/contact/"
+    weight = 3
 
 [languages.it]
-languageName = ":it:"
-title = "Portfolio"
+languageName = "IT"
 contentDir = "content/it"
 
-[languages.it.params]
-author = "Giacomo Di Clerico"
-info = "Ingegnere Informatico al Politecnico di Milano"
-description = "Sito di Giacomo Di Clerico"
-keywords = "sviluppatore, personale"
+  [languages.it.params]
+    subtitle = "Ingegnere Informatico · Cybersecurity"
+    owner = "Giacomo Di Clerico"
+    keywords = "cybersecurity, linux, homelab, portfolio"
+    copyright = ""
+    favicon = "favicon.ico"
 
-[[languages.it.menu.main]]
-name = "Chi sono"
-weight = 1
-url = "about/"
+    [languages.it.params.logo]
+      logoText = "~/portfolio"
+      logoHomeLink = "/it/"
 
-[[languages.it.menu.main]]
-name = "Progetti"
-weight = 3
-url = "projects/"
-
+  [[languages.it.menu.main]]
+    name = "chi sono"
+    url = "/it/about/"
+    weight = 1
+  [[languages.it.menu.main]]
+    name = "progetti"
+    url = "/it/projects/"
+    weight = 2
+  [[languages.it.menu.main]]
+    name = "contatti"
+    url = "/it/contact/"
+    weight = 3

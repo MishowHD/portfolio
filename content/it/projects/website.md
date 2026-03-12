@@ -1,76 +1,41 @@
 +++
-title = "Sito Web Personale & Workflow"
+title = "Sito personale & Workflow"
 date = "2025-10-20"
 draft = false
 +++
 
-Il mio sito personale è realizzato utilizzando **Hugo**, il tema **Hugo Coder** e un workflow di deploy automatizzato progettato per garantire velocità, semplicità e una manutenzione minima nel lungo periodo.  
-Ho scelto un generatore di siti statici open-source per mantenere il pieno controllo sui miei contenuti, garantire stabilità nel tempo ed evitare dipendenze da piattaforme esterne o database.
+Il mio sito personale è costruito con **Hugo**, il tema **hugo-theme-terminal**, e un workflow di deployment automatizzato pensato per velocità, semplicità e manutenibilità a lungo termine.
 
 ---
 
-## Stack Tecnologico
+## Stack tecnologico
 
-- Hugo (static site generator)  
-- Tema Hugo Coder  
-- Contenuti in Markdown  
-- Struttura multilingua EN/IT  
-- Repository GitHub per il versionamento  
-- GitHub Pages per il build automatico  
-- Cloudflare per CDN, HTTPS e caching  
-- Dominio personalizzato con DNSSEC attivo  
-
----
-
-## Perché ho scelto Hugo (e i Generator Statici)
-
-Ho scelto **Hugo** perché è:
-
-- estremamente veloce (build in millisecondi)  
-- open-source e supportato da una community solida  
-- sicuro per natura (nessun backend, nessun database)  
-- flessibile grazie a temi, template e shortcode  
-- ideale per la manutenzione nel lungo periodo  
-
-Questo lo rende una soluzione perfetta per un portfolio personale.
+- Hugo (static site generator)
+- Tema hugo-theme-terminal
+- Contenuti in Markdown
+- Setup multilingua EN/IT
+- Repository GitHub per il version control
+- GitHub Pages per le build automatizzate
+- Cloudflare per CDN, HTTPS e caching
+- Dominio custom con DNSSEC abilitato
 
 ---
 
-## Workflow di Deploy
+## Workflow di deployment
 
-1. Scrivo i contenuti in Markdown  
-2. Effettuo il commit delle modifiche su GitHub  
-3. GitHub Pages costruisce il sito utilizzando Hugo  
-4. Cloudflare distribuisce globalmente i file statici  
+1. Scrivi i contenuti in Markdown
+2. Commit su GitHub
+3. GitHub Pages compila il sito con Hugo
+4. Cloudflare distribuisce i file globalmente
 
-Questo workflow garantisce:
-
-- build automatici  
-- deploy atomici  
-- caching globale tramite CDN  
-- HTTPS di default  
-- zero downtime  
+Questo garantisce: build automatiche, deployment atomici, caching CDN globale, HTTPS di default, zero downtime.
 
 ---
 
-## Sicurezza e Performance
+## Sicurezza e performance
 
-- Completamente statico (nessun backend o database)  
-- Servito tramite HTTPS  
-- DNSSEC attivo  
-- Cache globale tramite Cloudflare  
-- Nessun tracciamento o script analitico invasivo  
-
----
-
-## Perché Questa Architettura
-
-- Versionamento completo  
-- Aggiornamenti semplici  
-- Supporto multilingua  
-- Nessuna manutenzione del backend  
-- Struttura pulita e sostenibile  
-- Ottima sicurezza e stabilità nel tempo  
-- Strumenti open-source e totale proprietà dei contenuti  
-
-Questo sito è sia il mio portfolio personale che un vero progetto ingegneristico, dove sperimento con static-site generation, automazione del deploy e design architetturale pulito.
+- Completamente statico (nessun backend, nessun database)
+- Servito su HTTPS
+- DNSSEC abilitato
+- Cache globale via Cloudflare
+- Nessuno script di tracking o analytics
