@@ -8,16 +8,10 @@ Feel free to reach out — I'm always open to interesting conversations about te
 
 ---
 
-## Get in Touch
-
-💼 [LinkedIn](https://www.linkedin.com/in/giacomodiclerico/)
+💼 [linkedin.com/in/giacomodiclerico](https://www.linkedin.com/in/giacomodiclerico/)
 
 ✉️ [info@giacomodiclerico.com](mailto:info@giacomodiclerico.com)
 
-🐙 [GitHub — MishowHD](https://github.com/MishowHD)
+🐙 [github.com/MishowHD](https://github.com/MishowHD)
 
-🦊 [GitLab — MishowHD](https://gitlab.com/MishowHD)
-
----
-
-_I'll try to reply as soon as possible._
+🦊 [gitlab.com/MishowHD](https://gitlab.com/MishowHD)

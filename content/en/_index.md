@@ -4,24 +4,24 @@ draft = false
 +++
 
 ```
- ██████╗ ██╗ █████╗  ██████╗ ██████╗ ███╗   ███╗ ██████╗
-██╔════╝ ██║██╔══██╗██╔════╝██╔═══██╗████╗ ████║██╔═══██╗
-██║  ███╗██║███████║██║     ██║   ██║██╔████╔██║██║   ██║
-██║   ██║██║██╔══██║██║     ██║   ██║██║╚██╔╝██║██║   ██║
-╚██████╔╝██║██║  ██║╚██████╗╚██████╔╝██║ ╚═╝ ██║╚██████╔╝
- ╚═════╝ ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝ ╚═════╝
+ ██████╗ ██████╗   ██████╗
+██╔════╝ ██╔══██╗ ██╔════╝
+██║  ███╗██║  ██║ ██║     
+██║   ██║██║  ██║ ██║     
+╚██████╔╝██████╔╝ ╚██████╗
+ ╚═════╝ ╚═════╝   ╚═════╝
 ```
 
 ```bash
 $ whoami
-Giacomo Di Clerico — computer engineer & Linux enthusiast
+Giacomo Di Clerico — computer engineer & cybersecurity student
 ```
 
 ```bash
 $ cat ~/intro.txt
 ```
 
-Hey! I'm **Giacomo Di Clerico**, a Computer Engineering student at **Politecnico di Milano**.
+Hey! I'm **Giacomo Di Clerico**, a Computer Engineering student at **Politecnico di Milano**, specializing in **cybersecurity**.
 
 I'm passionate about **Linux**, **open-source software**, and **self-hosted infrastructure**.
 I love experimenting in my homelab, managing virtualized environments, and building things from scratch.
@@ -32,6 +32,7 @@ $ ls ~/skills/
 
 | area         | tools                               |
 |--------------|-------------------------------------|
+| Security     | System hardening · Threat analysis  |
 | Systems      | Arch Linux · Proxmox · LXC · KVM   |
 | Networking   | DNS · VPN · Firewalls · Tailscale   |
 | Dev          | Python · Java · Git · Docker        |
@@ -39,5 +40,7 @@ $ ls ~/skills/
 
 ```bash
 $ uptime
-Studying since 20XX — still learning every day █
+Studying since 20XX — still learning every day
 ```
+
+$ <span class="cursor"></span>

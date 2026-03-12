@@ -8,16 +8,10 @@ Sentiti libero di contattarmi — sono sempre disponibile per conversazioni inte
 
 ---
 
-## Scrivimi
-
-💼 [LinkedIn](https://www.linkedin.com/in/giacomodiclerico/)
+💼 [linkedin.com/in/giacomodiclerico](https://www.linkedin.com/in/giacomodiclerico/)
 
 ✉️ [info@giacomodiclerico.com](mailto:info@giacomodiclerico.com)
 
-🐙 [GitHub — MishowHD](https://github.com/MishowHD)
+🐙 [github.com/MishowHD](https://github.com/MishowHD)
 
-🦊 [GitLab — MishowHD](https://gitlab.com/MishowHD)
-
----
-
-_Cercherò di rispondere il prima possibile._
+🦊 [gitlab.com/MishowHD](https://gitlab.com/MishowHD)

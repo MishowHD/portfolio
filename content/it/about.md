@@ -4,23 +4,23 @@ draft = false
 title = 'Chi sono'
 +++
 
-Ciao! Sono **Giacomo Di Clerico**, studente di **Ingegneria Informatica** al **Politecnico di Milano**.
+Ciao! Sono **Giacomo Di Clerico**, studente di Ingegneria Informatica al **Politecnico di Milano**, attualmente alla magistrale con focus in **cybersecurity**.
 
-Mi affascina il mondo di **Linux**, del **networking** e della **cybersecurity** — ambiti dove tecnologia, creatività e precisione si incontrano. Nel tempo libero sperimento nel mio **homelab**, progettando e gestendo ambienti self-hosted per esplorare **virtualizzazione**, **automazione** e **amministrazione di sistemi**.
+Il mio interesse per l'informatica è partito da una domanda semplice: *ma come funziona davvero, sotto il cofano?* Quella curiosità mi ha portato prima su Linux, poi nel networking, poi nella sicurezza — e non ho mai smesso di tirare il filo.
 
-Sono particolarmente attratto dalla **sicurezza informatica**, con focus su **analisi delle minacce**, **hardening dei sistemi** e progettazione di **infrastrutture resilienti** per proteggere dati e servizi critici.
+Sono particolarmente interessato alla **cybersecurity**, e sto costruendo attivamente le mie conoscenze in questo ambito attraverso il percorso di studi, ricerca personale e sperimentazione pratica nel mio homelab.
 
-Il mio obiettivo è **imparare**, **creare** e **condividere** conoscenza continuamente, contribuendo alla community open-source e connettendomi con persone che condividono la stessa passione per la tecnologia.
+Oltre al lato tecnico, mi importa la **cultura open-source**: l'idea che la conoscenza vada condivisa, che i buoni strumenti debbano essere liberi, e che la community conti.
 
 ---
 
 ## Interessi principali
 
+- Cybersecurity — hardening, threat analysis, infrastrutture sicure
 - Sistemi Linux & shell scripting
-- Networking e virtualizzazione
-- Cybersecurity & ethical hacking
+- Networking, DNS, VPN, firewall
+- Virtualizzazione & homelab design
 - Tecnologie open-source
-- Homelab design & automazione
 
 ---
 

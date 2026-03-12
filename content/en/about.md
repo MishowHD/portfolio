@@ -4,23 +4,23 @@ draft = false
 title = 'About'
 +++
 
-Hi! I'm **Giacomo Di Clerico**, a passionate **Computer Engineering student** at **Politecnico di Milano**.
+Hi! I'm **Giacomo Di Clerico**, a Computer Engineering student at **Politecnico di Milano**, currently pursuing a Master's in **cybersecurity**.
 
-I'm fascinated by the world of **Linux**, **networking**, and **cybersecurity** — areas where technology meets creativity and precision. In my spare time, I enjoy experimenting in my **homelab**, where I design and manage self-hosted environments to explore **virtualization**, **automation**, and **system administration**.
+My interest in computing started with a simple question: *how does this actually work under the hood?* That curiosity led me down the Linux rabbit hole, then into networking, then into security — and I never really stopped pulling at the thread.
 
-I'm particularly drawn to **digital security**, focusing on **threat analysis**, **system hardening**, and building **resilient infrastructures** to protect data and privacy.
+I'm particularly interested in **cybersecurity**, and actively building knowledge in this space through coursework, personal research, and hands-on experimentation in my homelab.
 
-My goal is to constantly **learn**, **create**, and **share** knowledge, contributing to the open-source community and connecting with people who share the same enthusiasm for technology.
+Beyond the technical side, I care about **open-source culture**: the idea that knowledge should be shared, that good tools should be free, and that the community matters.
 
 ---
 
 ## Technical Interests
 
+- Cybersecurity — system hardening, threat analysis, secure infrastructure
 - Linux systems & shell scripting
-- Networking and virtualization
-- Cybersecurity & ethical hacking
+- Networking, DNS, VPNs, firewalls
+- Virtualization & homelab design
 - Open-source technologies
-- Homelab design & automation
 
 ---
 
