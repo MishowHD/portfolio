@@ -4,31 +4,24 @@ draft = false
 title = 'Chi sono'
 +++
 
-Ciao! Sono **Giacomo Di Clerico**, uno studente di **Ingegneria Informatica** al **Politecnico di Milano**, con una profonda passione per **Linux**, l’**automazione** e la **cybersicurezza**.  
+Ciao! Sono **Giacomo Di Clerico**, studente di **Ingegneria Informatica** al **Politecnico di Milano**.
 
-Mi piace sperimentare all’interno del mio **homelab**, dove progetto e gestisco ambienti self-hosted per esplorare **reti**, **virtualizzazione** e **amministrazione di sistemi**. Questa esperienza mi ha permesso di sviluppare un approccio pratico e consapevole alle tecnologie open-source e all’infrastruttura moderna.
+Mi affascina il mondo di **Linux**, del **networking** e della **cybersecurity** — ambiti dove tecnologia, creatività e precisione si incontrano. Nel tempo libero sperimento nel mio **homelab**, progettando e gestendo ambienti self-hosted per esplorare **virtualizzazione**, **automazione** e **amministrazione di sistemi**.
 
-Affascinato dal mondo della **sicurezza informatica**, mi dedico allo studio di **analisi delle minacce**, **hardening dei sistemi** e **progettazione di infrastrutture sicure** per proteggere dati e servizi critici.  
+Sono particolarmente attratto dalla **sicurezza informatica**, con focus su **analisi delle minacce**, **hardening dei sistemi** e progettazione di **infrastrutture resilienti** per proteggere dati e servizi critici.
 
-Sono una persona curiosa, motivata e sempre pronta a **imparare**, **sperimentare** e **condividere** conoscenze con chi condivide la mia stessa passione per la tecnologia e l’innovazione digitale.
-
----
-
-## 🔧 Interessi principali
-
-- Sistemi Linux & automazione  
-- Networking e virtualizzazione  
-- Cybersecurity & ethical hacking  
-- Software open-source  
-- Sperimentazione in homelab  
+Il mio obiettivo è **imparare**, **creare** e **condividere** conoscenza continuamente, contribuendo alla community open-source e connettendomi con persone che condividono la stessa passione per la tecnologia.
 
 ---
 
-## 🌐 Contatti
+## Interessi principali
 
-💼 [**LinkedIn**](https://www.linkedin.com/in/giacomodiclerico/)  
-📧 [**info@giacomodiclerico.com**](mailto:info@giacomodiclerico.com)
+- Sistemi Linux & shell scripting
+- Networking e virtualizzazione
+- Cybersecurity & ethical hacking
+- Tecnologie open-source
+- Homelab design & automazione
 
 ---
 
-_Imparare, costruire, condividere ogni giorno un passo avanti._
+_Imparare, costruire, condividere — ogni giorno un passo avanti._

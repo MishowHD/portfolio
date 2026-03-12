@@ -4,22 +4,22 @@ draft = false
 title = 'Progetti'
 +++
 
-Qui puoi trovare una selezione dei progetti tecnici a cui ho lavorato:
+Ecco una selezione dei progetti tecnici su cui ho lavorato:
 
 ## Homelab
 
-Un ambiente completamente self-hosted basato su Proxmox VE  
+Un ambiente completamente self-hosted basato su Proxmox VE — virtualizzazione, servizi self-hosted e sperimentazione con Kubernetes.
+
 [Leggi di più →](/it/projects/homelab/)
 
 ---
 
-## Sito Web & Workflow
+## Sito personale & Workflow
 
-Gestisco anche questo sito come progetto personale.  
-È realizzato con Hugo, il tema Hugo Coder e un sistema di deploy completamente automatizzato.
+Questo stesso sito: costruito con Hugo, deploy automatizzato via GitHub Pages e distribuito tramite Cloudflare.
 
 [Leggi di più →](/it/projects/website/)
 
 ---
 
-I miei progetti sono in continua evoluzione… > Arriverà presto 😄
+_Altri progetti in arrivo..._
