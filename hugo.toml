@@ -18,61 +18,58 @@ noClasses = false
 unsafe = true
 
 [params]
-contentTypeName = "posts"
-showMenuItems = 3
 centerTheme = true
-showLanguageSelector = true
 
 [languages.en]
 languageName = "EN"
 contentDir = "content/en"
 
-  [languages.en.params]
-    subtitle = "Computer Engineer · Cybersecurity"
-    owner = "Giacomo Di Clerico"
-    keywords = "cybersecurity, linux, homelab, portfolio"
-    copyright = ""
+[languages.en.params]
+subtitle = "Computer Engineer · Cybersecurity"
+owner = "Giacomo Di Clerico"
+keywords = "cybersecurity, linux, homelab, portfolio"
+copyright = ""
 
-    [languages.en.params.logo]
-      logoText = "~/portfolio"
-      logoHomeLink = "/en/"
+[languages.en.params.logo]
+logoText = "~/portfolio"
+logoHomeLink = "/en/"
 
-  [[languages.en.menu.main]]
-    name = "about"
-    url = "/en/about/"
-    weight = 1
-  [[languages.en.menu.main]]
-    name = "projects"
-    url = "/en/projects/"
-    weight = 2
-  [[languages.en.menu.main]]
-    name = "contact"
-    url = "/en/contact/"
-    weight = 3
+[[languages.en.menu.main]]
+name = "about"
+url = "/en/about/"
+weight = 1
+[[languages.en.menu.main]]
+name = "projects"
+url = "/en/projects/"
+weight = 2
+[[languages.en.menu.main]]
+name = "links"
+url = "/en/links/"
+weight = 3
 
 [languages.it]
 languageName = "IT"
 contentDir = "content/it"
 
-  [languages.it.params]
-    subtitle = "Ingegnere Informatico · Cybersecurity"
-    owner = "Giacomo Di Clerico"
-    keywords = "cybersecurity, linux, homelab, portfolio"
-    copyright = ""
+[languages.it.params]
+subtitle = "Ingegnere Informatico · Cybersecurity"
+owner = "Giacomo Di Clerico"
+keywords = "cybersecurity, linux, homelab, portfolio"
+copyright = ""
 
-    [languages.it.params.logo]
-      logoText = "~/portfolio"
-      logoHomeLink = "/it/"
+[languages.it.params.logo]
+logoText = "~/portfolio"
+logoHomeLink = "/it/"
 
-  [[languages.it.menu.main]]
-    name = "chi sono"
-    url = "/it/about/"
-    weight = 1
-  [[languages.it.menu.main]]
-    name = "progetti"
-    url = "/it/projects/"
-    weight = 2
-  [[languages.it.menu.main]]
-    name = "contatti"
-    url = "/it/contact/"
-    weight = 3
+[[languages.it.menu.main]]
+name = "chi sono"
+url = "/it/about/"
+weight = 1
+[[languages.it.menu.main]]
+name = "progetti"
+url = "/it/projects/"
+weight = 2
+[[languages.it.menu.main]]
+name = "links"
+url = "/it/links/"
+weight = 3

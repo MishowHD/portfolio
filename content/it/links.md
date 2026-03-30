@@ -1,16 +1,16 @@
 +++
 date = '2025-10-19T21:45:44+02:00'
 draft = false
-title = 'Contatti'
+title = 'Links'
 +++
 
-Sentiti libero di contattarmi — sono sempre disponibile per conversazioni interessanti su tech, sicurezza e open-source.
+Mi trovi qui, o scrivimi direttamente via email.
 
 ---
 
-💼 [linkedin.com/in/giacomodiclerico](https://www.linkedin.com/in/giacomodiclerico/)
-
 ✉️ [info@giacomodiclerico.com](mailto:info@giacomodiclerico.com)
+
+💼 [linkedin.com/in/giacomodiclerico](https://www.linkedin.com/in/giacomodiclerico/)
 
 🐙 [github.com/MishowHD](https://github.com/MishowHD)
 
