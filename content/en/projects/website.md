@@ -1,6 +1,7 @@
 +++
 title = "Personal Website & Workflow"
 date = "2025-10-20"
+description = "This site — built with Hugo and hugo-theme-terminal, deployed via GitHub Pages, served through Cloudflare with a custom domain and DNSSEC."
 draft = false
 +++
 

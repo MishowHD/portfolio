@@ -19,6 +19,9 @@ unsafe = true
 
 [params]
 centerTheme = true
+showLastUpdated = true
+showLanguageSelector = true
+readMore = "[read more]"
 
 [languages.en]
 languageName = "EN"
@@ -46,6 +49,10 @@ weight = 2
 name = "links"
 url = "/en/links/"
 weight = 3
+[[languages.en.menu.main]]
+name = "rss"
+url = "/en/index.xml"
+weight = 4
 
 [languages.it]
 languageName = "IT"
@@ -73,3 +80,7 @@ weight = 2
 name = "links"
 url = "/it/links/"
 weight = 3
+[[languages.it.menu.main]]
+name = "rss"
+url = "/it/index.xml"
+weight = 4
