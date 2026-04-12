@@ -3,44 +3,20 @@ date = '2025-10-19T21:45:34+02:00'
 draft = false
 +++
 
-```
- ██████╗ ██████╗   ██████╗
-██╔════╝ ██╔══██╗ ██╔════╝
-██║  ███╗██║  ██║ ██║     
-██║   ██║██║  ██║ ██║     
-╚██████╔╝██████╔╝ ╚██████╗
- ╚═════╝ ╚═════╝   ╚═════╝
-```
-
-```bash
+```console
 $ whoami
-Giacomo Di Clerico — computer engineer & cybersecurity student
+Giacomo Di Clerico — computer engineering student · cybersecurity
 ```
 
-```bash
-$ cat ~/intro.txt
+```console
+$ cat about.txt
+Sysadmin at POuL — the open source student lab at Polimi.
+Studying computer engineering with a focus on cybersecurity.
 ```
 
-Hey! I'm **Giacomo Di Clerico**, a Computer Engineering student at **Politecnico di Milano**, specializing in **cybersecurity**.
-
-I'm passionate about **Linux**, **open-source software**, and **self-hosted infrastructure**.
-I love experimenting in my homelab, managing virtualized environments, and building things from scratch.
-
-```bash
+```console
 $ ls ~/skills/
-```
-
-| area         | tools                               |
-|--------------|-------------------------------------|
-| Security     | System hardening · Threat analysis  |
-| Systems      | Arch Linux · Proxmox · LXC · KVM   |
-| Networking   | DNS · VPN · Firewalls · Tailscale   |
-| Dev          | Python · Java · Git · Docker        |
-| Cloud-native | Kubernetes · CI/CD · GitHub Actions |
-
-```bash
-$ uptime
-Studying since 20XX — still learning every day
+security   linux   kubernetes   networking   C   python   git
 ```
 
 $ <span class="cursor"></span>
