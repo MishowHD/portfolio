@@ -21,7 +21,7 @@ unsafe = true
 centerTheme = true
 showLastUpdated = true
 showLanguageSelector = true
-readMore = "[read more]"
+readMore = "read more"
 
 [languages.en]
 languageName = "EN"
