@@ -1,9 +1,15 @@
 {{ define "main" }}
-  {{ with .Content }}
-    <div class="index-content">
-      {{ . }}
-    </div>
+  {{/* If the _index.md has showTitle = true, render h1 like a single page */}}
+  {{ if .Params.showTitle }}
+  <article class="post">
+    <h1 class="post-title">{{ .Title | markdownify }}</h1>
+  </article>
   {{ end }}
+
+  {{ with .Content }}
+    <div class="index-content">{{ . }}</div>
+  {{ end }}
+
   <div class="posts">
     {{ range (.Paginate (.Pages.ByDate.Reverse)).Pages }}
       <article class="post on-list">
