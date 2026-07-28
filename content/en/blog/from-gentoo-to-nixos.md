@@ -22,6 +22,8 @@ I moved to Gentoo because I wanted to try a source-based distro. And I genuinely
 
 Compiling everything from source with **Portage** and **USE flags** gave me a level of control that no binary distro can match. I understood what every package on my system was doing because I explicitly chose its features. The `make.conf`, the per-package USE flags, the kernel config — it was all mine.
 
+To mitigate compile times, I also set up and used a **binhost** (pre-compiled binary package repository). I really liked this setup as it drastically improved compilation times for heavy updates while still giving me custom compilation control where needed.
+
 I kept my Portage configuration versioned in git. `/etc/portage/make.conf`, `package.use/`, `package.accept_keywords/` — everything tracked. It felt like the right thing to do.
 
 ### But it got heavy
@@ -33,7 +35,7 @@ Over time, the friction added up:
 - **Long rebuilds** — `emerge -uDN @world` after a USE flag change could mean hours of recompilation
 - **Configuration was heavy** — even with git-tracked configs, maintaining the system was a constant effort
 
-Don't get me wrong — Gentoo is an incredible distro. It taught me more about Linux internals than anything else. But for a daily driver, the maintenance cost became too high.
+Don't get me wrong — Gentoo is an incredible distro. The experience and everything I learned from Gentoo are absolute gold: it taught me more about Linux internals than anything else. But for a daily driver, the maintenance cost became too high.
 
 ---
 

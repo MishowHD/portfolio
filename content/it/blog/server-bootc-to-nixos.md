@@ -58,7 +58,7 @@ Questi due mondi sono entrati in collisione. kube-router non riusciva a modifica
 
 ### Il problema di Fedora
 
-Qui è dove bootc + Fedora è diventato un problema. Fedora è **rolling release** per quanto riguarda il kernel. Sia Fedora 43 che 44 usano il **kernel 6.12+**, dove i plugin CNI per Kubernetes — e il software server in generale — non sono testati contro il nuovo comportamento di nft.
+Qui è dove bootc + Fedora è diventato un problema. Fedora è **rolling release** per quanto riguarda il kernel. Sia Fedora 43 che 44 usano il **kernel 7+**, mentre i plugin CNI per Kubernetes — e il software server in generale — non sono testati contro il nuovo comportamento di nft introdotto a partire dal kernel 6.12+.
 
 Il mio setup si è rotto per questo: kube-router su un kernel che ha introdotto funzionalità nft incompatibili con il frontend iptables.
 
@@ -68,7 +68,7 @@ Il mio setup si è rotto per questo: kube-router su un kernel che ha introdotto 
 
 Visto che usavo già NixOS sul desktop e mi trovavo benissimo, passare il server a NixOS è stata la risposta naturale.
 
-Invece di subire Fedora che aggiornava il kernel a versioni bleeding-edge rompendo i plugin CNI di Kubernetes, con NixOS posso bloccare esplicitamente il server su un kernel LTS stabile (`pkgs.linuxPackages_lts`) con una singola riga di configurazione:
+Invece di subire Fedora che aggiornava il kernel a release 7+ rompendo i plugin CNI di Kubernetes, con NixOS posso bloccare esplicitamente il server su un kernel LTS stabile come il 6.18 (`pkgs.linuxPackages_lts`) con una singola riga di configurazione:
 
 ```nix
 boot.kernelPackages = pkgs.linuxPackages_lts;

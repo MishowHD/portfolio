@@ -58,7 +58,7 @@ This is why the general direction in server environments is to stick to **well-t
 
 ### The Fedora problem
 
-Here's where bootc + Fedora became a problem. Fedora is a **rolling release** when it comes to the kernel. Both Fedora 43 and 44 shipped **kernel 6.12+**, where the CNI plugins for Kubernetes — and server software in general — are not tested against the new nft behavior.
+Here's where bootc + Fedora became a problem. Fedora is a **rolling release** when it comes to the kernel. Both Fedora 43 and 44 shipped **kernel 7+**, whereas CNI plugins for Kubernetes — and server software in general — are not tested against the new nft behavior introduced in kernel 6.12+.
 
 My setup broke because of this: kube-router on a kernel that introduced nft features incompatible with the iptables frontend.
 
@@ -68,7 +68,7 @@ My setup broke because of this: kube-router on a kernel that introduced nft feat
 
 Since I was already running NixOS on my desktop and loving it, moving the server to NixOS was the logical answer. 
 
-Instead of dealing with Fedora pushing new kernels that broke Kubernetes CNI plugins, NixOS allows me to explicitly pin the server to a stable LTS kernel (`pkgs.linuxPackages_lts`) with a single line of configuration:
+Instead of dealing with Fedora pushing kernel 7+ releases that broke Kubernetes CNI plugins, NixOS allows me to explicitly pin the server to a stable LTS kernel like 6.18 (`pkgs.linuxPackages_lts`) with a single line of configuration:
 
 ```nix
 boot.kernelPackages = pkgs.linuxPackages_lts;
