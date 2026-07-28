@@ -38,7 +38,7 @@ Il problema: non si possono riscrivere dall'oggi al domani tutte le applicazioni
 
 Questo layer di compatibilità non è una soluzione a lungo termine. nft continua ad evolversi, e le nuove funzionalità di nft non hanno contropartita iptables. Per il layer di compatibilità, queste sono effettivamente **breaking change** — non per nft in sé, ma per iptables-nft.
 
-Un esempio concreto: nel **kernel 6.12+**, nft ha introdotto una **bitmask nelle regole di NAT** che permette di aggiungere metadati ai pacchetti che attraversano le chain. Tailscale la usa per marcare i propri pacchetti — così da distinguere il traffico generato da Tailscale da quello esterno per il routing.
+Un esempio concreto: i kernel Linux recenti hanno introdotto una **bitmask nelle regole di NAT** in nft che permette di aggiungere metadati ai pacchetti che attraversano le chain. Tailscale la usa per marcare i propri pacchetti — così da distinguere il traffico generato da Tailscale da quello esterno per il routing.
 
 Questa bitmask **non ha equivalente iptables**. Quindi se fai un `iptables-save`, non sa come interpretare la regola e si rompe. Peggio: se un'applicazione che usa iptables-nft prova a modificare regole in una chain che contiene funzionalità native nft, può corrompere l'intero ruleset nft.
 
@@ -58,7 +58,7 @@ Questi due mondi sono entrati in collisione. kube-router non riusciva a modifica
 
 ### Il problema di Fedora
 
-Qui è dove bootc + Fedora è diventato un problema. Fedora è **rolling release** per quanto riguarda il kernel. Sia Fedora 43 che 44 usano il **kernel 7+**, mentre i plugin CNI per Kubernetes — e il software server in generale — non sono testati contro il nuovo comportamento di nft introdotto a partire dal kernel 6.12+.
+Qui è dove bootc + Fedora è diventato un problema. Fedora è **rolling release** per quanto riguarda il kernel. Sia Fedora 43 che 44 usano il **kernel 7+**, mentre i plugin CNI per Kubernetes — e il software server in generale — non sono sempre testati o pronti per i nuovi comportamenti di netfilter introdotti nei kernel bleeding-edge.
 
 Il mio setup si è rotto per questo: kube-router su un kernel che ha introdotto funzionalità nft incompatibili con il frontend iptables.
 
