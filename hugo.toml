@@ -34,7 +34,7 @@ keywords = "cybersecurity, linux, homelab, portfolio"
 copyright = ""
 
 [languages.en.params.logo]
-logoText = "~/portfolio"
+logoText = "~/blog"
 logoHomeLink = "/en/"
 
 [[languages.en.menu.main]]
@@ -42,8 +42,8 @@ name = "about"
 url = "/en/about/"
 weight = 1
 [[languages.en.menu.main]]
-name = "projects"
-url = "/en/projects/"
+name = "blog"
+url = "/en/blog/"
 weight = 2
 [[languages.en.menu.main]]
 name = "links"
@@ -65,7 +65,7 @@ keywords = "cybersecurity, linux, homelab, portfolio"
 copyright = ""
 
 [languages.it.params.logo]
-logoText = "~/portfolio"
+logoText = "~/blog"
 logoHomeLink = "/it/"
 
 [[languages.it.menu.main]]
@@ -73,8 +73,8 @@ name = "chi sono"
 url = "/it/about/"
 weight = 1
 [[languages.it.menu.main]]
-name = "progetti"
-url = "/it/projects/"
+name = "blog"
+url = "/it/blog/"
 weight = 2
 [[languages.it.menu.main]]
 name = "links"
