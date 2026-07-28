@@ -3,6 +3,7 @@ title = "Homelab — Stack & Infrastructure"
 date = "2025-10-20"
 description = "An overview of the homelab: virtualization on Proxmox, self-hosted services, and the full Kubernetes + networking stack."
 tags = ["homelab", "proxmox", "kubernetes"]
+aliases = ["/en/blog/homelab/overview/", "/en/projects/homelab/overview/", "/en/projects/homelab/"]
 draft = false
 +++
 
