@@ -8,7 +8,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^\\.github/workflows/hugo\\.yml$"],
+      "managerFilePatterns": [
+        "/^\\.github/workflows/hugo\\.yml$/"
+      ],
       "matchStrings": ["HUGO_VERSION:\\s*(?<currentValue>[^\\s]+)"],
       "depNameTemplate": "gohugoio/hugo",
       "datasourceTemplate": "github-releases",
