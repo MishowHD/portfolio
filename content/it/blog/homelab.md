@@ -1,5 +1,5 @@
 +++
-title = "Stack & Infrastruttura"
+title = "Homelab — Stack & Infrastruttura"
 date = "2025-10-20"
 description = "Una panoramica dell'homelab: virtualizzazione su Proxmox, servizi self-hosted e lo stack completo Kubernetes + networking."
 tags = ["homelab", "proxmox", "kubernetes"]
