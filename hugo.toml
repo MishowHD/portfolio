@@ -34,7 +34,7 @@ keywords = "cybersecurity, linux, homelab, portfolio"
 copyright = ""
 
 [languages.en.params.logo]
-logoText = "~/blog"
+logoText = "~/portfolio"
 logoHomeLink = "/en/"
 
 [[languages.en.menu.main]]
@@ -65,7 +65,7 @@ keywords = "cybersecurity, linux, homelab, portfolio"
 copyright = ""
 
 [languages.it.params.logo]
-logoText = "~/blog"
+logoText = "~/portfolio"
 logoHomeLink = "/it/"
 
 [[languages.it.menu.main]]
