@@ -38,9 +38,9 @@ Il problema: non si possono riscrivere dall'oggi al domani tutte le applicazioni
 
 Questo layer di compatibilità non è una soluzione a lungo termine. nft continua ad evolversi, e le nuove funzionalità di nft non hanno contropartita iptables. Per il layer di compatibilità, queste sono effettivamente **breaking change** — non per nft in sé, ma per iptables-nft.
 
-Un esempio concreto: nel **kernel 7.1+**, nft ha introdotto una **bitmask nelle regole di NAT** che permette di aggiungere metadati ai pacchetti che attraversano le chain. Tailscale la usa per marcare i propri pacchetti — così da distinguere il traffico generato da Tailscale da quello esterno per il routing.
+Un esempio concreto: quando servizi moderni come **Tailscale** creano regole di rete, usano direttamente la sintassi nativa di **nftables** — ad esempio definendo set complessi, map dinamiche o bitmask personalizzate sui mark dei pacchetti per distinguere il proprio traffico per il routing e il NAT.
 
-Questa bitmask **non ha equivalente iptables**. Quindi se fai un `iptables-save`, non sa come interpretare la regola e si rompe. Peggio: se un'applicazione che usa iptables-nft prova a modificare regole in una chain che contiene funzionalità native nft, può corrompere l'intero ruleset nft.
+Queste strutture native nft **non hanno un equivalente diretto nel vecchio modello dati di iptables**. Quando uno strumento basato su `iptables-nft` (o `iptables-save`) prova a leggere o modificare la tabella di rete, non riesce a decodificare le espressioni nft native presenti nelle catene. Risultato: `iptables-nft` va in errore o fallisce l'aggiornamento. Peggio ancora: se prova a modificare una chain condivisa che contiene regole nft native, può provocare il fallimento dell'intero aggiornamento o corrompere il ruleset di rete.
 
 ### L'impatto reale
 
@@ -58,9 +58,9 @@ Questi due mondi sono entrati in collisione. kube-router non riusciva a modifica
 
 ### Il problema di Fedora
 
-Qui è dove bootc + Fedora è diventato un problema. Fedora è **rolling release** per quanto riguarda il kernel. Sia Fedora 43 che 44 usano già il **kernel 7.x** (come il 7.2), dove i plugin CNI per Kubernetes — e il software server in generale — non sono ancora testati per i nuovi comportamenti di netfilter.
+Qui è dove bootc + Fedora è diventato un problema. Fedora aggiorna il kernel in modo molto aggressivo. Con kernel bleeding-edge e in rapida evoluzione, i disallineamenti tra le versioni userspace di `iptables-nft` / `libnftnl` e il subsistema netfilter del kernel emergono rapidamente — prima che i plugin CNI per Kubernetes (e il software server in generale) siano stati testati e aggiornati.
 
-Il mio setup si è rotto per questo: kube-router su un kernel che ha introdotto funzionalità nft incompatibili con il frontend iptables.
+Il mio setup si è rotto proprio per questo: `kube-router` usava `iptables-nft` per gestire la rete del cluster, ma entrando in collisione con le regole nft native di Tailscale e le novità di netfilter sul kernel bleeding-edge, la sincronizzazione delle regole di rete ha smesso di funzionare.
 
 ---
 
@@ -68,7 +68,7 @@ Il mio setup si è rotto per questo: kube-router su un kernel che ha introdotto 
 
 Visto che usavo già NixOS sul desktop e mi trovavo benissimo, passare il server a NixOS è stata la risposta naturale.
 
-Invece di subire Fedora che aggiornava il kernel a release 7+ rompendo i plugin CNI di Kubernetes, con NixOS posso bloccare esplicitamente il server su un kernel LTS stabile come il 6.18 (`pkgs.linuxPackages_lts`) con una singola riga di configurazione:
+Invece di subire l'aggiornamento aggressivo del kernel di Fedora che rischia di rompere i plugin CNI di Kubernetes per disallineamenti in netfilter, con NixOS posso bloccare esplicitamente il server su un kernel LTS stabile come il 6.18 (`pkgs.linuxPackages_lts`) con una singola riga di configurazione:
 
 ```nix
 boot.kernelPackages = pkgs.linuxPackages_lts;
